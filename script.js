@@ -6,3 +6,10 @@ function booleanToString(b){
     }
 }
 booleanToString(true);
+
+function booleanToString(b){
+    if (b === true) return 'true';
+    if (b === false) return 'false';
+    
+    throw new Error("Parameter 'b' should be a boolean");
+  }
